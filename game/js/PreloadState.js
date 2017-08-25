@@ -5,14 +5,16 @@ class PreloadState {
     this.preloadBar = this.game.add.sprite(
       this.world.centerX, 
       this.world.centerY, 
-      'preload')
+      'preload');
     
-    this.preloadBar.anchor.set(.5)
+    this.preloadBar.anchor.set(.5);
 
-    this.load.setPreloadSprite(this.preloadBar)
+    this.load.setPreloadSprite(this.preloadBar);
 
-    this.load.image('logo', 'img/logo.png')
-    this.load.image('pnlogo', 'img/pnlogo.png')
+    this.load.image('logo', 'img/logo.png');
+    this.load.image('pnlogo', 'img/pnlogo.png');
+    this.load.image('tiles','img/tiles/tiles.png');
+
   }
 
   create() {
